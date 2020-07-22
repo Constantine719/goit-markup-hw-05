@@ -123,11 +123,15 @@ a {
   letter-spacing: 0.02em;
 
   color: var(--primary-text-color);
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
 }
 
 .nav-link:hover,
 .nav-link:focus {
   color: var(--accent-color);
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
 }
 
 .nav-link.current {
@@ -143,14 +147,13 @@ a {
   height: 5px;
   background-color: var(--accent-color);
   border-radius: 2px;
-  /* opacity: 0; */
   transform: scaleX(0);
   transition: transform 250ms var(--timing-function);
 }
 
 .nav-link:hover::after {
-  /* opacity: 1; */
   transform: scaleX(1);
+  transition: transform 250ms var(--timing-function);
 }
 
 .nav-link.current::after {
@@ -184,11 +187,15 @@ a {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
 }
 
 .contacts-link:hover,
 .contacts-link:focus {
   color: var(--accent-color);
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
 }
 
 .contacts-link {
@@ -202,10 +209,14 @@ a {
   width: 17px;
   height: 16px;
   fill: currentColor;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
 }
 
 .contacts-icon:hover {
   fill: var(--accent-color);
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
 }
 
 /* Герой */
@@ -473,12 +484,16 @@ a {
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
 }
 
 .team-soclink-icon:hover,
 .team-soclink-icon:focus {
   fill: var(--white-color);
   background-color: var(--accent-color);
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
 }
 
 /* Клиенты */
@@ -527,12 +542,16 @@ a {
   height: 90px;
   border: 1px solid var(--icon-color);
   border-radius: 4px;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
 }
 
 .customers-icon:hover,
 .customers-icon:focus {
   fill: var(--accent-color);
   border: 1px solid var(--accent-color);
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
 }
 
 .client1-icon {
@@ -663,11 +682,15 @@ a {
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
 }
 
 .joinin-soclink-icon:hover,
 .joinin-soclink-icon:focus {
   background-color: var(--accent-color);
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
 }
 
 .footer-text-subscripe {
@@ -727,12 +750,16 @@ a {
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 3px 1px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
 }
 
 .button-portf:hover,
 .button-portf:focus {
   color: var(--white-color);
   background-color: var(--accent-color);
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
 }
 
 .works-invisible {
@@ -751,8 +778,14 @@ a {
   justify-content: center;
 }
 
-.works-project:hover .overlay-works {
+.project-links:hover .overlay-works {
   transform: translateY(0);
+  transition: transform 250ms var(--timing-function);
+}
+
+.project-links:focus .overlay-works {
+  transform: translateY(0);
+  transition: transform 250ms var(--timing-function);
 }
 
 .project-div {
@@ -770,6 +803,8 @@ a {
 .project-links {
   padding-bottom: 20px;
   display: block;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
 }
 
 .image-div {
@@ -789,14 +824,8 @@ a {
 }
 
 .project-text {
-  /* position: absolute;
-  top: 50%;
-  left: 50%
-  transform: translate(-50%, -50%) */
   margin: 0;
   padding: 63px 24px;
-
-  /* transform: opacity(1); */
 }
 
 .works-project-list:nth-child(3n) {
@@ -811,6 +840,8 @@ a {
 .project-links:focus {
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
     0px 1px 1px rgba(0, 0, 0, 0.12);
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
 }
 
 .project-name {
