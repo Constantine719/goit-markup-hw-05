@@ -47,7 +47,7 @@ a {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  width: 1200px;
+  width: 1170px;
 }
 
 .section {
@@ -793,6 +793,7 @@ a {
 }
 
 .works-project-list {
+  width: 370px;
   margin-right: 30px;
   margin-bottom: 30px;
   background: var(--white-color);
