@@ -63,7 +63,7 @@
         эффективные решения <br />
         для вашего бизнеса
       </h1>
-      <a href="" class="button">Заказать услугу</a>
+      <a href="" class="button" data-modal-open>Заказать услугу</a>
     </section>
 
     <!--Секция преимуществ-->
@@ -469,5 +469,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="btn-close" data-modal-close>
+          <svg class="close-icon" width="30px" height="30px" viewBox="0 0 500 500">
+            <use href="./images/symbol-defs.svg#btn-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
